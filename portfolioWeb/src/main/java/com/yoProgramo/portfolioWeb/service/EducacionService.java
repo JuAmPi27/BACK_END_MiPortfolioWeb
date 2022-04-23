@@ -18,11 +18,12 @@ public class EducacionService implements IEducacionService {
     public List<Educacion> obtenerEducacion() {
        return repository.findAll();
     }
-
+    
     @Override
-    public void crearEducacion(Educacion educacion) {
-        repository.save(educacion);
+    public Educacion crearEducacion(Educacion educacion) {
+       return repository.save(educacion);
     }
+    
 
     @Override
     public void borrarEducacion(Long id) {

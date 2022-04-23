@@ -27,8 +27,9 @@ public class EducacionController {
     }
     
     @PostMapping("/educacion/crear")
-    public void crearEducacion(@RequestBody Educacion educacion) {
-        service.crearEducacion(educacion);
+    @ResponseBody
+    public Educacion crearEducacion(@RequestBody Educacion educacion) {
+        return service.crearEducacion(educacion);
     }
     
     @DeleteMapping("/educacion/{id}")
