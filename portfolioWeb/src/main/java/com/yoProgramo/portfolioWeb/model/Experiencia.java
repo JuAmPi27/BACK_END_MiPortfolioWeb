@@ -26,6 +26,7 @@ public class Experiencia {
     private String fin;
     private String tareas;
 
+    
     public Experiencia() {
     }
 
