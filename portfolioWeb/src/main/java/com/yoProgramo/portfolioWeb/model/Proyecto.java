@@ -22,22 +22,24 @@ public class Proyecto {
     private String nombre;
     private String descripcion;
     private String fechaRealizacion;
-    private String href;
+    private String github;
 
     public Proyecto() {
     }
 
-    public Proyecto(String nombre, String descripcion, String fechaRealizacion, String href) {
+    public Proyecto(String nombre, String descripcion, String fechaRealizacion, String github) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaRealizacion = fechaRealizacion;
-        this.href = href;
+        this.github = github;
     }
 
     @Override
     public String toString() {
-        return "Proyecto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", fechaRealizacion=" + fechaRealizacion + ", href=" + href + '}';
+        return "Proyecto{" + "id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", fechaRealizacion=" + fechaRealizacion + ", github=" + github + '}';
     }
+
+    
     
     
     

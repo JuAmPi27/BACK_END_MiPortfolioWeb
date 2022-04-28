@@ -13,7 +13,7 @@ import lombok.Setter;
 @Entity
 public class Usuario {
     
-     @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     
@@ -37,6 +37,12 @@ public class Usuario {
     public String toString() {
         return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", email=" + email + ", password=" + password + ", isEnabled=" + isEnabled + '}';
     }
+
+    
+    
+    
+
+    
     
     
     
