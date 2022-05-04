@@ -29,16 +29,16 @@ public class ExperienciaController {
     
     @PostMapping("/experiencia/crear")
     @ResponseBody
-    public Experiencia crearEducacion(@RequestBody Experiencia experiencia) {
+    public Experiencia crearExperiencia(@RequestBody Experiencia experiencia) {
         return service.crearExperiencia(experiencia);
     }
     
     @DeleteMapping("/experiencia/{id}")
-    public void borrarEducacion(@PathVariable Long id) {
+    public void borrarExperiencia(@PathVariable Long id) {
         service.borrarExperiencia(id);
     }
     
-    @GetMapping("/educacion/{id}")
+    @GetMapping("/experiencia/{id}")
     @ResponseBody
     public Experiencia obtenerExperiencia(@PathVariable Long id) {
         return service.obtenerExperiencia(id);
