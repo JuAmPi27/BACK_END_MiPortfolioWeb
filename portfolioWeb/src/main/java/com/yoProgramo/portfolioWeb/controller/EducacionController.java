@@ -46,6 +46,7 @@ public class EducacionController {
     @PutMapping("/educacion/update")
     public void modificarEducacion(@RequestBody Educacion educacion) {
         service.modificarEducacion(educacion);
+        System.out.println("educacion");
     }
     
 }
